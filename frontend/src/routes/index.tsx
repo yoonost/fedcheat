@@ -7,7 +7,8 @@ import windowsIcon from '../images/windows_gray.svg'
 
 import amazingImg from '../images/amazing.png'
 import amazing2Img from '../images/amazing2.png'
-import { FireIcon } from "@heroicons/react/24/outline"
+import catalogImg from '../images/catalog.png'
+import { FireIcon, Squares2X2Icon } from "@heroicons/react/24/outline"
 
 class IndexRoute extends Component {
     render () : ReactNode {
@@ -32,8 +33,8 @@ class IndexRoute extends Component {
 
                 <section className="max-w-7xl mx-auto w-full py-8 xl:px-0 px-8 mt-[6vh]">
                     <h2 className='text-gray-200 font-semibold text-3xl mb-8'>Наши продукты</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[...Array(6)].map(() => (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" style={{ maskImage: "linear-gradient(to bottom, white, white, transparent)" }}>
+                        {[...Array(3)].map(() => (
                             <div className="relative flex flex-col overflow-hidden min-h-[225px] max-h-[225px] cursor-pointer group rounded-lg">
                                 <div className="absolute top-4 right-4 py-2 px-4 bg-orange-500/70 text-gray-200 rounded-lg z-10 flex items-center">
                                     <FireIcon className="h-5 w-5 text-gray-200 mr-1" />
@@ -58,7 +59,16 @@ class IndexRoute extends Component {
                             </div>
                         ))}
                     </div>
+                    <div className="mt-5 w-full h-24 bg-white/10"></div>
+                    {/*<div className='flex flex-col items-center justify-center mt-5'>
+                        <button className='flex px-8 py-2 bg-transparent rounded-lg border-2 border-gray-200 hover:bg-gray-200 transition font-medium z-10 items-center text-gray-200 hover:text-black'>
+                            <Squares2X2Icon className="h-5 w-5 mr-1" />
+                            <span>Показать больше</span>
+                        </button>
+                    </div>*/}
                 </section>
+
+                
 
             </div>
         )

@@ -1,4 +1,4 @@
-# client
-client/dist
-client/node_modules
-client/package-lock.json
+# frontend
+frontend/dist
+frontend/node_modules
+frontend/package-lock.json
